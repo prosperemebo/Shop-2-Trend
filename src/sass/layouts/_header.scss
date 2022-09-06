@@ -5,6 +5,10 @@
   flex-direction: column;
   margin-bottom: 15rem;
 
+  @include respond(phone) {
+    margin-bottom: 2rem;
+  }
+
   .oval {
     position: absolute;
     top: 0;

@@ -1,7 +1,7 @@
 .product-composition {
   .composition {
     display: flex;
-    transition: transform linear 0.2s;
+    transition: transform linear 0.05s;
 
     &:not(:last-child) {
       margin-bottom: 2rem;

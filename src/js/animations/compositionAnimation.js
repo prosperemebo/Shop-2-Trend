@@ -5,20 +5,20 @@ gsap.registerPlugin(ScrollTrigger);
 
 const timeline = gsap.timeline({
   defaults: {
-    duration: 4,
+    duration: 2,
   },
 });
 
 timeline
   .to('.product-composition .left-composition', {
-    xPercent: '60',
+    xPercent: '40',
   })
   .to(
     '.product-composition .right-composition',
     {
-      xPercent: '-60',
+      xPercent: '-40',
     },
-    '-=4'
+    '-=2'
   );
 
 ScrollTrigger.create({
