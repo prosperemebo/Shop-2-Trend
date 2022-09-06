@@ -1,0 +1,23 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+    font-size: $default-font-size;
+
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
+
+  &-primary {
+    padding: 2rem 10rem;
+    background-color: $color-primary;
+    font-size: 2.5rem;
+    letter-spacing: 0.05em;
+    color: $color-secondary;
+    font-weight: 400;
+  }
+}
