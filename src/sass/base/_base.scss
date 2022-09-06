@@ -10,6 +10,7 @@ html {
   //this defines what 1 rem is
   font-size: 62.5%; // 1rem = 10px
   scroll-behavior: smooth;
+  overflow-x: hidden;
 
   @include respond(tab-land) {
     // 1rem = 9px, 9*100/16
@@ -31,6 +32,8 @@ body {
   box-sizing: border-box;
   background-color: $color-secondary;
   color: $color-primary;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 ::selection {

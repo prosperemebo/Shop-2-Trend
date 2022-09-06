@@ -1,0 +1,53 @@
+.product-composition {
+  .composition {
+    display: flex;
+    transition: transform linear 0.2s;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    &.left-composition {
+      transform: translateX(-100%);
+    }
+
+    .img {
+      //   width: 45rem;
+      height: 45rem;
+
+      @include respond(tab-land) {
+        height: 38rem;
+      }
+
+      @include respond(tab-port) {
+        height: 30rem;
+      }
+
+      @include respond(phone) {
+        height: 25rem;
+      }
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      img {
+        display: block;
+        // width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+      scrollbar-width: none;
+      display: none;
+    }
+  }
+}
+
+.section-playroll {
+  height: 200vh;
+}
