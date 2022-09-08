@@ -6,6 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 const timeline = gsap.timeline({
   defaults: {
     duration: 2,
+    // ease: 'power1.out',
   },
 });
 

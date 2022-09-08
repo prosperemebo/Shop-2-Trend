@@ -2,6 +2,7 @@ import barba from '@barba/core';
 import gsap from 'gsap';
 import animationEnter from './animations/animationEnter';
 import './animations/compositionAnimation';
+import './animations/playrollAnimation';
 
 barba.init({
   transitions: [
