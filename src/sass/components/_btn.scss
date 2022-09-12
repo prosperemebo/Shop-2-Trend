@@ -13,9 +13,11 @@
   }
 
   &-primary {
-    padding: 2rem 10rem;
+    padding: 1rem 4rem;
     background-color: $color-primary;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    text-transform: uppercase;
     letter-spacing: 0.05em;
     color: $color-secondary;
     font-weight: 400;
