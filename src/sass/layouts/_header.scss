@@ -15,11 +15,35 @@
     left: 0;
     z-index: -1;
 
-    img {
+    @include respond(phone) {
+      top: 3%;
+      left: 44%;
+      transform: translate(-50%, -50%);
+      width: 120%;
+    }
+
+    .desktop {
       width: 50vw;
 
       @include respond(tab-land) {
         width: 60vw;
+      }
+
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    .phone {
+      display: none;
+
+      @include respond(phone) {
+        display: block;
+        // position: absolute;
+        // top: -10;
+        // left: 0;
+        // z-index: -1;
+        width: 100%;
       }
     }
   }
