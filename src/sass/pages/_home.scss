@@ -137,3 +137,33 @@
     }
   }
 }
+
+body.about {
+  background-color: $color-primary;
+  color: $color-secondary;
+
+  .heading-primary {
+    color: $color-secondary;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+
+  .container {
+    margin-bottom: 5rem;
+
+    h2 {
+      margin-bottom: 0rem;
+      font-size: 1.8rem;
+    }
+
+    li {
+      list-style: none;
+      font-size: 1.6rem;
+      padding: 0.8rem 0;
+    }
+  }
+}
+
+.about-main {
+  padding: 4rem 2rem;
+}

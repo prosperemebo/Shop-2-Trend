@@ -77,12 +77,16 @@ module.exports = (env, argv) => ({
       filename: 'index.html',
       template: './src/index.html',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'about/index.html',
+      template: './src/about/index.html',
+    }),
     new MiniCssExtractPlugin({
       filename: 'css/app.css',
     }),
   ],
   devServer: {
-    contentBase: [path.join(__dirname, '/src')],
+    contentBase: [path.join(__dirname, 'src')],
     watchContentBase: true,
     compress: true,
     port: 9090,
